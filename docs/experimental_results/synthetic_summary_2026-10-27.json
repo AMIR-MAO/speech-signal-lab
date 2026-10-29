@@ -1,0 +1,121 @@
+{
+  "data_type": "synthetic harmonic proxy (NOT real speech)",
+  "research_question": "Does denoising improve sample-level SNR in this controlled proxy?",
+  "seeds": 20,
+  "conditions": [
+    -5,
+    0,
+    5,
+    10
+  ],
+  "methods": [
+    "no_processing",
+    "bandpass",
+    "spectral_gate"
+  ],
+  "metric": "delta SNR (dB)",
+  "uncertainty": "95% percentile bootstrap CI across independent seeds",
+  "limitations": [
+    "No human speech",
+    "No WER/STOI/PESQ",
+    "Synthetic noise and signal may bias method comparisons"
+  ],
+  "summary": [
+    {
+      "target_snr_db": -5,
+      "method": "bandpass",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 9.5197,
+      "ci95_low_db": 9.4786,
+      "ci95_high_db": 9.5615
+    },
+    {
+      "target_snr_db": -5,
+      "method": "no_processing",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 0.0,
+      "ci95_low_db": 0.0,
+      "ci95_high_db": 0.0
+    },
+    {
+      "target_snr_db": -5,
+      "method": "spectral_gate",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 7.4774,
+      "ci95_low_db": 7.4079,
+      "ci95_high_db": 7.5505
+    },
+    {
+      "target_snr_db": 0,
+      "method": "bandpass",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 9.4287,
+      "ci95_low_db": 9.3911,
+      "ci95_high_db": 9.4704
+    },
+    {
+      "target_snr_db": 0,
+      "method": "no_processing",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 0.0,
+      "ci95_low_db": 0.0,
+      "ci95_high_db": 0.0
+    },
+    {
+      "target_snr_db": 0,
+      "method": "spectral_gate",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 3.2172,
+      "ci95_low_db": 3.1562,
+      "ci95_high_db": 3.2776
+    },
+    {
+      "target_snr_db": 5,
+      "method": "bandpass",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 9.1541,
+      "ci95_low_db": 9.1205,
+      "ci95_high_db": 9.1923
+    },
+    {
+      "target_snr_db": 5,
+      "method": "no_processing",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 0.0,
+      "ci95_low_db": 0.0,
+      "ci95_high_db": 0.0
+    },
+    {
+      "target_snr_db": 5,
+      "method": "spectral_gate",
+      "n_replicates": 20,
+      "mean_delta_snr_db": -1.4565,
+      "ci95_low_db": -1.4936,
+      "ci95_high_db": -1.4199
+    },
+    {
+      "target_snr_db": 10,
+      "method": "bandpass",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 8.3866,
+      "ci95_low_db": 8.3565,
+      "ci95_high_db": 8.4215
+    },
+    {
+      "target_snr_db": 10,
+      "method": "no_processing",
+      "n_replicates": 20,
+      "mean_delta_snr_db": 0.0,
+      "ci95_low_db": 0.0,
+      "ci95_high_db": 0.0
+    },
+    {
+      "target_snr_db": 10,
+      "method": "spectral_gate",
+      "n_replicates": 20,
+      "mean_delta_snr_db": -6.3495,
+      "ci95_low_db": -6.3768,
+      "ci95_high_db": -6.3258
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "dataset": "synthetic harmonic proxy, not actual speech",
+  "seed": 21,
+  "results": [
+    {
+      "target_input_snr_db": -5,
+      "method": "bandpass",
+      "input_snr_db": -5.0,
+      "output_snr_db": 4.426,
+      "delta_snr_db": 9.426
+    },
+    {
+      "target_input_snr_db": -5,
+      "method": "spectral_gate",
+      "input_snr_db": -5.0,
+      "output_snr_db": 2.508,
+      "delta_snr_db": 7.508
+    },
+    {
+      "target_input_snr_db": 0,
+      "method": "bandpass",
+      "input_snr_db": -0.0,
+      "output_snr_db": 9.353,
+      "delta_snr_db": 9.353
+    },
+    {
+      "target_input_snr_db": 0,
+      "method": "spectral_gate",
+      "input_snr_db": -0.0,
+      "output_snr_db": 3.275,
+      "delta_snr_db": 3.275
+    },
+    {
+      "target_input_snr_db": 5,
+      "method": "bandpass",
+      "input_snr_db": 5.0,
+      "output_snr_db": 14.11,
+      "delta_snr_db": 9.11
+    },
+    {
+      "target_input_snr_db": 5,
+      "method": "spectral_gate",
+      "input_snr_db": 5.0,
+      "output_snr_db": 3.526,
+      "delta_snr_db": -1.474
+    },
+    {
+      "target_input_snr_db": 10,
+      "method": "bandpass",
+      "input_snr_db": 10.0,
+      "output_snr_db": 18.39,
+      "delta_snr_db": 8.39
+    },
+    {
+      "target_input_snr_db": 10,
+      "method": "spectral_gate",
+      "input_snr_db": 10.0,
+      "output_snr_db": 3.652,
+      "delta_snr_db": -6.348
+    }
+  ]
+}
